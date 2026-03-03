@@ -1,2 +1,82 @@
 # Tkit-Fathurrobbany
 Tugas Kelompok Rancang Bangun Perangkat Lunak Kelompok 3, memahami penggunaan GitHub dalam 
+# 📚 Sistem Informasi TKIT Fathurrobbany
+
+Project ini merupakan tugas kelompok mata kuliah Rekayasa Perangkat Lunak (RBPL).  
+Sistem ini digunakan untuk membantu pengelolaan data sekolah TKIT Fathurrobbany.
+
+---
+
+## 🎯 Fitur Utama
+
+- 🔐 Login & Logout (Session Management)
+- 📊 Laporan Perkembangan Siswa
+- 💰 Informasi SPP
+- 📝 Presensi Siswa
+
+---
+
+## 👥 Pembagian Tugas
+
+### 👩‍💻 Team Lead
+- Setup repository GitHub
+- Branching strategy
+- Review Pull Request
+- Login & Session Management
+
+### 👩‍💻 Backend Developer (Najmi)
+- CRUD Laporan Perkembangan
+- Integrasi database PDO
+- Validasi session guru
+
+### 👩‍💻 Backend / Feature Developer
+- Informasi SPP
+- Generate laporan akhir PDF
+
+### 👨‍💻 Feature Developer + Testing
+- Presensi
+- Unit Testing
+- Dokumentasi fitur
+
+---
+
+## 🛠 Teknologi yang Digunakan
+
+- PHP 8
+- MySQL
+- PDO
+- HTML & CSS
+- XAMPP
+- Git & GitHub
+
+---
+
+## 📂 Struktur Folder
+
+
+---
+
+## 🚀 Cara Menjalankan Project
+
+1. Clone repository
+2. Pindahkan ke folder `htdocs` XAMPP
+3. Import database ke phpMyAdmin
+4. Jalankan melalui browser:
+
+   http://localhost/Tkit-Fathurrobbany
+
+---
+
+## 🔐 Keamanan
+
+- Session validation
+- PDO prepared statement (anti SQL Injection)
+- htmlspecialchars() untuk mencegah XSS
+
+---
+
+## 📌 Status Project
+
+✔️ Fitur laporan berjalan  
+✔️ Sistem login aktif  
+✔️ Data tersimpan di database
