@@ -208,7 +208,7 @@ INSERT INTO `siswa` (`id_siswa`, `nis`, `nama_siswa`, `jk`, `tgl_lahir`, `alamat
 ('007', '20240108', 'Phoenix Ares', 'L', '2020-09-22', 'jln. anggrek', NULL, 'Dimas', 'Aktif'),
 ('008', '20240109', 'Athena Jolie', 'P', '2021-04-10', 'jln. cempaka', NULL, 'Lestari', 'Aktif'),
 ('009', '20240110', 'Elara Scarlet', 'P', '2020-12-01', 'jln. flamboyan', NULL, 'Ardi', 'Aktif'),
-('010', '20240111', 'Gracie Alonica', 'P', '2021-06-25', 'jln. kenanga', NULL, 'Bagas', 'Aktif');
+('010', '20240111', 'Gracie Alonica', 'P', '2021-06-25', 'jln. kenanga', NULL, 'Bagas'	, 	'Aktif');
 
 -- --------------------------------------------------------
 
