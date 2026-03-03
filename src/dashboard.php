@@ -1,5 +1,4 @@
 <?php
-session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
@@ -78,7 +77,7 @@ $tahun_ajaran = ($bulan_sekarang >= 7) ? $tahun_sekarang . '-' . ($tahun_sekaran
         </div>
 
         <div style="margin-top: auto;">
-            <a href="auth/logout.php" class="nav-item" style="color: #ef4444;"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            <a href="logout.php" class="nav-item" style="color: #ef4444;"><i class="fas fa-sign-out-alt"></i> Logout</a>
         </div>
     </div>
 
