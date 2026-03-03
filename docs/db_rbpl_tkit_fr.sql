@@ -199,6 +199,11 @@ CREATE TABLE `siswa` (
 --
 
 INSERT INTO `siswa` (`id_siswa`, `nis`, `nama_siswa`, `jk`, `tgl_lahir`, `alamat`, `id_kelas`, `id_ortu`, `status`) VALUES
+('001', '20240101', 'Arshaka Virendra', 'L', '2021-02-14', 'jln. sukamaju', NULL, 'Dedi', 'Aktif'),
+('002', '20240102', 'Zunaira Shanza', 'P', '2020-11-05', 'jln. bantar', NULL, 'Maya', 'Aktif'),
+('003', '20240103', 'Kenzo Abimanyu', 'L', '2021-05-20', 'jln. letnan', NULL, 'Heru', 'Aktif'),
+('004', '20240104', 'Mikayla Humaira', 'P', '2021-01-12', 'jln. dadaha ', NULL, 'Sari ', 'Aktif'),
+('005', '20240105', 'Azzam Hafizhan', 'L', '2020-12-30', 'jln. siliwangi', NULL, 'Budi', 'Aktif'),
 ('006', '20240107', 'Monza Sainz', 'L', '2021-03-18', 'jln. melati', NULL, 'Rian', 'Aktif'),
 ('007', '20240108', 'Phoenix Ares', 'L', '2020-09-22', 'jln. anggrek', NULL, 'Dimas', 'Aktif'),
 ('008', '20240109', 'Athena Jolie', 'P', '2021-04-10', 'jln. cempaka', NULL, 'Lestari', 'Aktif'),
