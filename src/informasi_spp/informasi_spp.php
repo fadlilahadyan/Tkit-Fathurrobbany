@@ -98,8 +98,8 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Status SPP</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="keuangan.css">
+  <link rel="stylesheet" href="../dashboard.css">
+  <link rel="stylesheet" href="informasi_spp.css">
 </head>
 <body>
     <div class="sidebar">
@@ -109,27 +109,24 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
         <div class="nav-group">
             <span class="nav-label">Utama</span>
-            <a href="dashboard.php" class="nav-item "><i class="fas fa-th-large"></i> Dashboard</a>
+            <a href="../dashboard.php" class="nav-item "><i class="fas fa-th-large"></i> Dashboard</a>
         </div>
 
         <div class="nav-group">
             <span class="nav-label">Kelas</span>
-            <a href="halaman_absensi_guru.php" class="nav-item"><i class="fas fa-calendar-check"></i> Absensi Siswa</a>
-            <a href="laporan.php" class="nav-item"><i class="fas fa-chart-line"></i> Laporan Perkembangan</a>
+            <a href="../presensi/halaman_absensi_guru.php" class="nav-item"><i class="fas fa-calendar-check"></i> Absensi Siswa</a>
+            <a href="../laporan/laporan.php" class="nav-item"><i class="fas fa-chart-line"></i> Laporan Perkembangan</a>
         </div>
 
         <div class="nav-group">
             <span class="nav-label">Keuangan</span>
-            <a href="keuangan.php" class="nav-item active"><i class="fas fa-wallet"></i> Informasi SPP</a>
+            <a href="informasi_spp.php" class="nav-item active"><i class="fas fa-wallet"></i> Informasi SPP</a>
         </div>
 
-        <div class="nav-group">
-            <span class="nav-label">Pemberitahuan</span>
-            <a href="pengumuman.php" class="nav-item"><i class="fas fa-bullhorn"></i> Pengumuman</a>
-        </div>
+
 
         <div style="margin-top: auto;">
-            <a href="../logout.php" class="nav-item" style="color: #ef4444;"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            <a href="../auth/logout.php" class="nav-item" style="color: #ef4444;"><i class="fas fa-sign-out-alt"></i> Logout</a>
         </div>
     </div>
 
