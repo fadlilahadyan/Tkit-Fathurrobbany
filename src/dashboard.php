@@ -67,17 +67,17 @@ $tahun_ajaran = ($bulan_sekarang >= 7) ? $tahun_sekarang . '-' . ($tahun_sekaran
 
         <div class="nav-group">
             <span class="nav-label">Kelas</span>
-            <a href="halaman_absensi_guru.php" class="nav-item"><i class="fas fa-calendar-check"></i> Absensi Siswa</a>
-            <a href="laporan.php" class="nav-item"><i class="fas fa-chart-line"></i> Laporan Perkembangan</a>
+            <a href="presensi/halaman_absensi_guru.php" class="nav-item"><i class="fas fa-calendar-check"></i> Absensi Siswa</a>
+            <a href="laporan/laporan.php" class="nav-item"><i class="fas fa-chart-line"></i> Laporan Perkembangan</a>
         </div>
 
         <div class="nav-group">
             <span class="nav-label">Keuangan</span>
-            <a href="informasi.php" class="nav-item"><i class="fas fa-wallet"></i> Informasi SPP</a>
+            <a href="informasi_spp/informasi_spp.php" class="nav-item"><i class="fas fa-wallet"></i> Informasi SPP</a>
         </div>
 
         <div style="margin-top: auto;">
-            <a href="logout.php" class="nav-item" style="color: #ef4444;"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            <a href="auth/logout.php" class="nav-item" style="color: #ef4444;"><i class="fas fa-sign-out-alt"></i> Logout</a>
         </div>
     </div>
 
@@ -132,10 +132,10 @@ $tahun_ajaran = ($bulan_sekarang >= 7) ? $tahun_sekarang . '-' . ($tahun_sekaran
 
             <div class="content-card">
                 <div class="card-header">Aksi Cepat</div>
-                <a href="halaman_absensi_guru.php" style="text-decoration: none; display: block; margin-bottom: 10px;">
+                <a href="presensi/shalaman_absensi_guru.php" style="text-decoration: none; display: block; margin-bottom: 10px;">
                     <button class="action-btn btn-blue" style="width: 100%;"><i class="fas fa-user-check"></i> Mulai Absensi</button>
                 </a>
-                <a href="laporan.php" style="text-decoration: none; display: block;">
+                <a href="laporan/laporan.php" style="text-decoration: none; display: block;">
                     <button class="action-btn btn-purple" style="width: 100%;"><i class="fas fa-file-alt"></i> Input Perkembangan</button>
                 </a>
             </div>
