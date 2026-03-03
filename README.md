@@ -52,7 +52,18 @@ Sistem ini digunakan untuk membantu pengelolaan data sekolah TKIT Fathurrobbany.
 ---
 
 ## 📂 Struktur Folder
-
+Tkit-Fathurrobbany/
+│
+├── docs/
+├── src/
+│ ├── config/
+│ ├── auth/
+│ ├── laporan/
+│ ├── spp/
+│ └── presensi/
+│
+├── tests/
+└── README.md
 
 ---
 
