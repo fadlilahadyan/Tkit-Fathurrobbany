@@ -1,5 +1,5 @@
 <?php
-// src/guru/presensi.php
+// src/presensi/presensi.php
 require_once '../config/db.php';
 
 // Cek login guru
@@ -8,17 +8,20 @@ if (!isset($_SESSION['id_user']) || $_SESSION['role'] !== 'guru') {
     exit();
 }
 
-// Ambil data guru
 $id_user = $_SESSION['id_user'];
-$sql_guru = "SELECT * FROM guru WHERE id_user = '$id_user'";
+$email = $_SESSION['username'];
+
+// CEK DATA GURU - VERSI SIMPEL (TANPA ID_USER)
+$sql_guru = "SELECT * FROM guru WHERE email = '$email'";
 $result_guru = $pdo->query($sql_guru);
 $guru = $result_guru->fetch();
 
-// Jika data guru belum ada, buat default
+// Jika data guru belum ada, buat berdasarkan EMAIL
 if (!$guru) {
     $id_guru = 'G' . rand(1,999);
-    $pdo->query("INSERT INTO guru (id_guru, nama_guru, id_user, email) 
-                 VALUES ('$id_guru', '{$_SESSION['nama_lengkap']}', '$id_user', '{$_SESSION['username']}')");
+    $sql_insert = "INSERT INTO guru (id_guru, nama_guru, email) 
+                   VALUES ('$id_guru', '{$_SESSION['nama_lengkap']}', '$email')";
+    $pdo->query($sql_insert);
     $guru = ['id_guru' => $id_guru];
 }
 
